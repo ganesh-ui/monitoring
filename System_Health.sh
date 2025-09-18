@@ -36,7 +36,7 @@ fi
 
 # If no alerts
 if [ "$CPU_USAGE" -le "$CPU_THRESHOLD" ] && [ "$MEMORY_USAGE" -le "$MEMORY_THRESHOLD" ] && [ "$DISK_USAGE" -le "$DISK_THRESHOLD" ] && [ "$PROCESS_COUNT" -le "$PROCESS_THRESHOLD" ]; then
-    echo "System is healthy ✅" | tee -a "$LOGFILE"
+    echo "System is healthy" | tee -a "$LOGFILE"
 fi
 echo "----------------------------------------" >> "$LOGFILE"
 # End of script
